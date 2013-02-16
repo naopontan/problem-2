@@ -107,7 +107,11 @@ A   B   C   D   E
             *
 ```
 
-#Extensions - Short Coding!
-Make the program you wrote shorter as possible as you can! For example, use && operator instead of if condition. 
+#Extensions - Short Coding (Code Golf)!
+
+Nicely done! Then, you can go to the next level. 
+From now, let's challenge to make the program you wrote shorter as possible as you can! 
+For example, use && operator instead of if condition.
+Your program may be much shorter if you use 'map' or 'each' method.
 
 
