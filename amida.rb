@@ -11,7 +11,7 @@ class Amida
     @data = make_data(@num)
   end
 
-  def make_data(num, &b)
+  def make_data(num)
     data = Array.new(MAX_LINE) { Array.new(num) }
     join_line(data)
     set_bars(data)
@@ -46,12 +46,12 @@ class Amida
       line.each{|x| print x ? a : b}
       puts
     end
-    print ' ' * SPACE * (rand(@num) + 1)  # FIXME: bug!!!
+    print ' ' * (SPACE + 1) * (rand(@num))
     puts '*'
   end
 end
 
 if $0 == __FILE__
-  pp amida = Amida.new(ARGV.first || rand(10) + 1)
+  pp amida = Amida.new(ARGV.first || rand(Amida::MAX_LINE) + 1)
   amida.display
 end
